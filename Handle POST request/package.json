@@ -1,0 +1,12 @@
+{
+  "name": "post-example",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to handle POST requests using Express 4.0 and body-parser",
+  "main": "main.js",
+  "dependencies": {
+    "body-parser": "^1.10.0",
+    "express": "^4.10.4"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}

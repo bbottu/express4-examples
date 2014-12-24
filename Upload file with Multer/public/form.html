@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Post example</title>
+    <style>
+      .entry label{ display:inline-block; width:80px;}
+      .entry input{ width:300px;}
+    </style>
+</head>
+<body>
+    <h1>Post example</h1>
+    <form id="exampleForm" action="form" enctype="multipart/form-data" method="post">
+        <div class="entry">
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title"></input>
+        </div>
+        <div class="entry">
+            <label for="datafile">File: </label>
+            <input type="file" id="datafile" name="datafile" size="10">
+        </div>
+        <input type="submit" id="submitButton" value="Submit"></input>
+    </form>
+    <script type="text/javascript">
+        function handleFileSelect(evt) {
+            if (typeof FileReader !== "undefined") {
+                var size = document.getElementById('datafile').files[0].size;
+                if(size > 52428800){
+                    alert("File is too big. Max file size: 50MB");
+                    document.getElementById("submitButton").disabled = true; 
+                } else {
+                    document.getElementById("submitButton").disabled = false; 
+                }
+            }
+        }
+        document.getElementById('datafile').addEventListener('change', handleFileSelect, false);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Post example</title>
+    <style>
+      .entry label{ display:inline-block; width:80px;}
+      .entry input{ width:300px;}
+    </style>
+</head>
+<body>
+    <h1>Post example</h1>
+    <form id="exampleForm" action="form" method="post">
+        <div class="entry">
+            <label for="firstName">First name: </label>
+            <input type="text" id="firstName" name="firstName"></input>
+        </div>
+        <div class="entry">
+            <label for="lastName">Last name: </label>
+            <input type="text" id="lastName" name="lastName"></input>
+        </div>
+        <div class="entry">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"></input>
+        </div>
+        <input type="submit" value="Submit"></input>
+    </form>
+</body>
+</html>

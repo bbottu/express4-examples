@@ -1,0 +1,12 @@
+{
+  "name": "mustache-example",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to use Mustache to do server side rendering",
+  "main": "main.js",
+  "dependencies": {
+    "express": "^4.10.4",
+    "mustache-express": "^1.2.0"
+  },
+  "devDependencies": {},
+  "license": "ISC"
+}
