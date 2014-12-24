@@ -8,5 +8,5 @@
     "mustache-express": "^1.2.0"
   },
   "devDependencies": {},
-  "license": "ISC"
+  "license": "MIT"
 }

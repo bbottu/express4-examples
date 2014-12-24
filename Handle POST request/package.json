@@ -8,5 +8,5 @@
     "express": "^4.10.4"
   },
   "devDependencies": {},
-  "license": "ISC"
+  "license": "MIT"
 }

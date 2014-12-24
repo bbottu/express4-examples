@@ -9,5 +9,5 @@
     "winston": "^0.8.3"
   },
   "devDependencies": {},
-  "license": "ISC"
+  "license": "MIT"
 }

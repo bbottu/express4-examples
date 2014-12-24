@@ -8,5 +8,5 @@
     "multer": "^0.1.6"
   },
   "devDependencies": {},
-  "license": "ISC"
+  "license": "MIT"
 }
