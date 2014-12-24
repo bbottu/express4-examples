@@ -13,8 +13,8 @@
  			colorize: false,
  			json: false,
  			filename: './logs/winston.log',
- 			maxsize: 1024, //1KB
-            maxFiles: 5
+ 			maxsize: 52428800, //50MB
+            maxFiles: 10
  		})
  	]
  });
