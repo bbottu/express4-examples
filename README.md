@@ -11,7 +11,7 @@ This repository contains several small but useful examples of Express 4. These e
 
 **Note:** To run the example "Upload and resize image with gm" you will need to install ImageMagick. 
 
-On Ubuntu you can use
+On Ubuntu you can use:
 ```
 sudo apt-get install imagemagick
 ```
