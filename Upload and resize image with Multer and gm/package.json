@@ -1,0 +1,14 @@
+{
+  "name": "upload-and-resize-image-example",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to upload and resize an image using Express 4.0, Multer and gm",
+  "main": "main.js",
+  "dependencies": {
+    "async": "^0.9.0",
+    "express": "^4.10.4",
+    "gm": "^1.17.0",
+    "multer": "^0.1.6"
+  },
+  "devDependencies": {},
+  "license": "MIT"
+}
