@@ -20,3 +20,5 @@ On Mac OS X, you can use Homebrew and do:
 ```
 brew install imagemagick
 ```
+
+**Note 2:** To run the example "Use MongDB with Mongoose" you will need to install [MongoDB](http://www.mongodb.org/).
