@@ -4,7 +4,7 @@
   "description": "This project demonstrates how to handle GET requests using Express 4",
   "main": "main.js",
   "dependencies": {
-    "express": "^4.10.4"
+    "express": "4.x"
   },
   "devDependencies": {},
   "license": "MIT"

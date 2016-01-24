@@ -31,16 +31,16 @@ app.get('/', function(req, res){
 	res.sendFile('public/form.html', { root: __dirname });
 });
 
-app.post('/form', multiFormUpload, function(req, res){
+app.post('/form', multiFormUpload.single('datafile'), function(req, res){
 	res.writeHead(200, {'Content-Type': 'text/html'});
 	res.write('<html><head></head><body>');
 	res.write('<h3>Result</h3>');
 
-	var file = req.files.datafile;
+	var file = req.file;
 	if(file.toobig){
 		res.write('<p>File was too big!</p>');
 	} else {
-		createImages(path.join(uploadedImagesDir, file.name), resizedImagesDir, req.body.title, file.extension, function(err){
+		createImages(path.join(uploadedImagesDir, file.filename), resizedImagesDir, req.body.title, file.extension, function(err){
 			if(err){
 				console.log(err);
 				res.write('<p>Doh! Something went wrong while resizing.</p>');
